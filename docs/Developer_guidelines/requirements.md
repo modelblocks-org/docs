@@ -4,7 +4,7 @@
 
 We enforce the following requirements in all projects.
 
-1. **Open-source code**: projects must use either MIT or Apache 2.0, which are both [OSI approved](https://opensource.org/licenses) open-source licenses, and they must be openly available in platforms such as GitHub.
+1. **Open-source code**: projects must use either Apache 2.0 or MIT open-source licenses, which are [OSI approved](https://opensource.org/licenses), and they must be openly available in platforms such as GitHub.
 2. **Open data**: data produced by projects (dataset tools and data modules in particular) should use a [CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/) whenever possible.
 3. **Versioning**: projects must be version controlled with official releases, which can be used to specify the version of the project used in a study and/or dataset, and an accompanying CHANGELOG. Project developers are free to choose their preferred approach (e.g., [SemVer](https://semver.org/) or [CalVer](https://calver.org/)).
 4. **Testing**: projects must employ some type of testing to ensure quality and long-term stability. The approach will vary depending on the type of project:
@@ -88,7 +88,7 @@ The following is a list of general advice on how to format files to help tools i
 
     ???+ example "Example of tabular subnational data"
 
-        | country_id       | shape_id         | shape_spec       | demand       |
+        | country_id       | shape_id         | shape_spec       | demand_mwh   |
         |------------------|------------------|------------------|--------------|
         | DEU              | DE13             | NUTS2024         | 4500         |
         | DEU              | DE14             | NUTS2024         | 4800         |
