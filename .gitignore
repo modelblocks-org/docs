@@ -1,0 +1,33 @@
+### OS-specific
+.DS_Store
+
+### Editors
+*~
+\#*\#
+**/.vscode
+.$*
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+src/clio_tools/_version.py
+
+# Virtual environments
+.venv
+
+### Notebooks
+.ipynb_checkpoints
+
+# Mutable folders
+tmp/
+temp/
+
+# Mkdocs
+.cache/
+
+# Docs
+site
