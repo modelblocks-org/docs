@@ -1,15 +1,23 @@
-# A framework for modular and easy to understand energy modelling tools
+# Modelblocks documentation
 
-`clio` aims to be a collection modularisation guidelines and tools that help energy modellers produce high-quality research that is repeatable, understanable and easy to use.
+`modelblocks` aims to be a collection modular tools and modularisation guidelines that help energy modellers produce high-quality research that is repeatable, understanable, and easy to use.
 
-Please read all about it in our [documentation](https://clio.readthedocs.io/en/stable/)!
+Please read all about it in our [documentation](https://modelblocks-docs.readthedocs.io/en/stable/)!
 
-## `clio` development
+## `modelblocks` documentation development
 
-Install [`pixi`](https://pixi.sh/latest/) and run:
+We rely on [`pixi`](https://pixi.sh/latest/) for development and maintenance.
+To install, simply run the following:
 
 ```bash
-git clone git@github.com:calliope-project/clio.git
-cd clio
-pixi install --all  # Installs both default and developer dependencies
+git clone git@github.com:modelblocks-org/docs.git
+cd docs
+pixi install --all
 ```
+
+## Helper commands
+
+- `pixi run build-docs`: build a local version of the documentation
+- `pixi run serve-docs`: render the documentation on your browser
+- `pixi run style`: run CI linting, refractoring and spellchecking
+- `pixi run test`: quick local test of the documentation

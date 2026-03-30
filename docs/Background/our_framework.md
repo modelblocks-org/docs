@@ -42,29 +42,31 @@ These are topic-specific data-generating [`snakemake`](https://snakemake.github.
     Below is an example of how a data module can be accessed by another workflow.
 
     ```python
-    # Include local module configuration.
-    configfile: "config/modules/foobar.yaml"
+    # Load the module configuration
+    with open(workflow.source_path("config/geoboundaries.yaml"), "r") as file:
+        config_geoboundaries = yaml.safe_load(file.read())
 
-    module foobar:
+    module geoboundaries:
         # Request a specific module version.
         snakefile:
             github(
-                "calliope-project/foobar",
+                "modelblocks-org/module_geo_boundaries",
                 path="workflow/Snakefile",
-                tag="v1.0.0"
+                tag="v0.1.9"
             )
-        # Module configuration has its own key to ensure isolation.
-        config: config["foobar"]
-        # A prefix is added to isolate module input/output files.
-        prefix: "results/module_foobar"
+        # Specify the module configuration.
+        config: config_geoboundaries
+        # Pathvars let you tune input/output file location.
+        pathvars:
+            shapes="results/module_geoboundaries/shapes.parquet"
 
     # Rewrite rule names to avoid naming conflicts
-    use rule * from foobar as module_foobar_*
+    use rule * from geoboundaries as module_geoboundaries_*
     ```
 
 ??? note "Template"
 
-    All data modules should follow [our standardised template](https://github.com/calliope-project/data-module-template).
+    All data modules should follow [our standardised template](https://github.com/modelblocks-org/data-module-template).
     This template provides a baseline for developers to ensure the following.
 
     - Version-specific access via version tags.
@@ -81,9 +83,9 @@ These are study-specific workflows that combine the outputs of all other types o
     Since they tend to be study-specific, they will rarely (if ever) be accessed by other tools or components.
     It is perfectly possible to ensure that a model builder can be accessed modularly, but this is not required.
 
-## The `clio_tools` integration utilities
+## The `clio_tools` integration utility
 
-To save time and enable component developers to check against the latest `clio` standards, we provide the `clio_tools` library.
+To save time and enable component developers to check against the latest `modelblocks` standards, we provide the `clio_tools` library.
 This is a set of useful utility functions, geared towards ensuring smooth interfacing.
 
-For more information, check [`clio_tools`](https://github.com/modelblocks-org/clio-tools)
+For more information, check [`clio_tools`](https://github.com/modelblocks-org/clio-tools).

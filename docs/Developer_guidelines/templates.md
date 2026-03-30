@@ -24,7 +24,7 @@ This would quickly become confusing without some level of standardisation, so ou
 - Automatically generated documentation in a standard format, providing a familiar structure across all data modules.
 - Automatic checks for template updates, aiding module developers in keeping up with the latest standard.
 
-URL: <https://github.com/calliope-project/data-module-template>
+URL: <https://github.com/modelblocks-org/data-module-template>
 
 ## Model builder template
 

@@ -46,7 +46,7 @@ The following is a list of general advice on how to format files to help tools i
 
         ???+ example "Example of a tidy table"
 
-            | year          | country_id       | shape_id         | demand       |
+            | year          | country_id       | shape_id         | demand_mwh   |
             |---------------|------------------|------------------|--------------|
             | 2020          | ITA              | North            | 4500         |
             | 2020          | ITA              | East             | 4800         |
@@ -68,20 +68,13 @@ The following is a list of general advice on how to format files to help tools i
                 "shape_id": "no_unit",
                 "demand": "mwh"
                 }
-            dataframe.attrs["source"] = "github.com/calliope-project/clio"
+            dataframe.attrs["source"] = "github.com/modelblocks-org/docs"
             dataframe.attrs["license"] = "CC-BY-4.0"
             dataframe.to_parquet('my_data.parquet')
             ```
 
 3. **Raster data**: we prefer to use GeoTIFF (.tiff) files.
 4. **Polygon data**: we prefer [GeoParquet](https://geoparquet.org/) (.parquet) files.
-
-    ??? example "Example shapefiles in our standard format"
-
-        You can find some simple examples of our standard data format in the `clio/resources/shapes` folder.
-
-        --8<-- "resources/shapes/README.md:docs"
-
 5. **Gridded data**: we prefer to use [netCDF](https://www.unidata.ucar.edu/software/netcdf/) (.nc) files.
 
 ## Metadata conventions
