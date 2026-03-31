@@ -2,7 +2,7 @@
 
 `modelblocks` aims to be a collection modular tools and modularisation guidelines that help energy modellers produce high-quality research that is repeatable, understanable, and easy to use.
 
-Please read all about it in our [documentation](https://modelblocks-docs.readthedocs.io/en/stable/)!
+Please read all about it in our [documentation](https://modelblocks.readthedocs.io/en/stable/)!
 
 ## `modelblocks` documentation development
 
