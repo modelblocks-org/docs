@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_name: modelblocks
+site_name: Modelblocks
 site_url: https://modelblocks.readthedocs.io/
 repo_name: docs
 repo_url: https://github.com/modelblocks-org/docs/
