@@ -3,7 +3,7 @@
 # https://citation-file-format.github.io/
 cff-version: 1.2.0
 message: Please cite this project using the metadata from this file.
-title: "modelblocks - Re-usable building blocks for energy system models"
+title: "modelblocks - Reusable building blocks for energy system models"
 repository: https://github.com/modelblocks-org/docs
 license: Apache 2.0
 version: 0.0.1

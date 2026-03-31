@@ -2,7 +2,7 @@
 
 site_name: modelblocks
 site_url: https://modelblocks.readthedocs.io/
-repo_name: clio
+repo_name: docs
 repo_url: https://github.com/modelblocks-org/docs/
 edit_uri: edit/main/docs/
 theme:
@@ -22,24 +22,24 @@ theme:
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
-      primary: red
-      accent: pink
+      primary: teal
+      accent: blue grey
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-      primary: red
-      accent: pink
+      primary: teal
+      accent: blue grey
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/weather-night
         name: Switch to system preference
-      primary: red
-      accent: pink
+      primary: teal
+      accent: blue grey
 markdown_extensions:
   - admonition
   - pymdownx.tasklist:

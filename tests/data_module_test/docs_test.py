@@ -2,8 +2,9 @@
 
 import subprocess
 
+
 def test_mkdocs_builds(tmp_path, pytestconfig):
-    """Run a basic check on the """
+    """Run a basic check on the"""
     project_root = pytestconfig.rootpath
 
     result = subprocess.run(

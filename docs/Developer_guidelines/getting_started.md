@@ -13,10 +13,10 @@ If you don't, we recommend following `mamba`'s [installation advice](https://git
     mamba install -c conda-forge copier
     ```
 
-2. Call the `copier` template of the type of component you wish to make. Currently, we only support [data modules](https://github.com/calliope-project/data-module-template).
+2. Call the `copier` template of the type of component you wish to make. Currently, we only support [data modules](https://github.com/modelblocks-org/data-module-template).
 
     ```shell
-    copier copy 'https://github.com/calliope-project/data-module-template'
+    copier copy 'https://github.com/modelblocks-org/data-module-template'
     ```
 
 3. You'll be prompted with some questions. After answering them, `copier` will auto-generate the module for you.
