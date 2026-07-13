@@ -57,3 +57,14 @@
     margin-bottom: 0;
     margin-top: 0;
 }
+
+/* Make card links cover the entire grid card. */
+.md-typeset .grid.cards > ul > li {
+    position: relative;
+}
+
+.md-typeset .grid.cards a.card-link::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+}

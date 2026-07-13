@@ -115,6 +115,9 @@ plugins:
   - search
 nav:
   - Home: index.md
+  - Using Modelblocks:
+    - user/index.md
+    - user/setup.md
   - Getting started:
     - getting_started/installation.md
   - Background:

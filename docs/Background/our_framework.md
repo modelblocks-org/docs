@@ -34,7 +34,7 @@ A higher focus is put on following [FAIR principles](https://www.go-fair.org/fai
 
 ### Data modules
 
-These are topic-specific data-generating [`snakemake`](https://snakemake.github.io/) workflows that can be configured to produce case-specific data, allowing users to tune certain assumptions via configuration files or by through input data. These modules follow a commonly agreed input/output structure, their methodology is well documented, and they rely on datasets and software libraries that are trustworthy and stable. This is achieved through a standardised template that all data modules must follow.
+These are topic-specific data-generating [`Snakemake`](https://snakemake.github.io/) workflows that can be configured to produce case-specific data, allowing users to tune certain assumptions via configuration files or by through input data. These modules follow a commonly agreed input/output structure, their methodology is well documented, and they rely on datasets and software libraries that are trustworthy and stable. This is achieved through a standardised template that all data modules must follow.
 
 ??? info "Interfacing"
 
