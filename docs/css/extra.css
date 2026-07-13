@@ -1,0 +1,59 @@
+.rst-badge {
+    font-size: 0.7rem;
+}
+
+/* reduce font size of rendered math */
+.katex-html {
+    font-size: 0.8rem;
+}
+
+/* Set this to match the logo */
+:root {
+    --md-primary-fg-color:        #0e9c81ff;
+    --md-primary-fg-color--light: #23b89cff;
+    --md-primary-fg-color--dark:  #026353ff;
+}
+
+.md-typeset, .md-nav, .md-tabs__link, .md-typeset .admonition, .md-typeset details, .md-typeset table:not([class]) {
+    font-size: 0.8rem;
+}
+
+.md-typeset h1, .md-typeset h2 {
+    font-weight: normal;
+    color: var(--md-typeset-color);
+}
+
+.doc-function h3 {
+    /* font-size: 1.0rem; */
+    margin-top: 3.0rem;
+}
+
+.bubble {
+    border-radius: 2px;
+    padding: 1px 4px 1px 4px;
+}
+
+
+/* Allow tables to be horizontally scrollable. */
+.md-typeset__scrollwrap {
+  overflow-x: auto;
+}
+
+
+.md-typeset li.xr-var-item, .md-typeset ul.xr-var-list {
+    display: contents;
+}
+
+.md-typeset .xr-section-details {
+    display: none;
+}
+
+.md-typeset ul.xr-dim-list li {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.md-typeset ul.xr-dim-list {
+    margin-bottom: 0;
+    margin-top: 0;
+}
