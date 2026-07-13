@@ -14,13 +14,13 @@ This documentation is meant to guide users and developers on how to follow our C
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-rocket:{ .lg .middle } __Using Modelblocks__
+-   :fontawesome-solid-rocket:{ .lg .middle } __[Using Modelblocks](./user/index.md){ .card-link }__
 
-    [Start here](./user/index.md) if you want to use Modelblocks modules in your own research.
+    Learn how to use existing Modelblocks modules in your research.
 
--   :fontawesome-solid-screwdriver-wrench:{ .lg .middle } __Development Conventions__
+-   :fontawesome-solid-screwdriver-wrench:{ .lg .middle } __[Development Conventions](./developer/index.md){ .card-link }__
 
-    [Start here](./user/index.md) if you want to follow the Modelblocks Convention to share your research as a reproducible workflow.
+    Learn about the Modelblocks Convention to create new Modelblocks modules and share your research with others.
 
 </div>
 

@@ -68,3 +68,11 @@
     inset: 0;
     content: "";
 }
+
+.md-typeset img.workflow-comparison-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1236 / 635;
+    object-fit: contain;
+    background: white;
+}
