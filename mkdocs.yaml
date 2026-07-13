@@ -115,6 +115,8 @@ plugins:
   - search
 nav:
   - Home: index.md
+  - Getting started:
+    - getting_started/installation.md
   - Background:
     - Background/motivation.md
     - Background/our_framework.md
