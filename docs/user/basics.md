@@ -176,5 +176,3 @@ This can be easily handled by re-defining `pathvars` when importing modules.
     ```
 
     1. Notice how the "shapes" `wildcard` was changed to be the filename instead of the directory name.
-
-

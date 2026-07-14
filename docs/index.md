@@ -23,4 +23,3 @@ This documentation is meant to guide users and developers on how to follow our C
     Learn about the Modelblocks Convention to create new Modelblocks modules and share your research with others.
 
 </div>
-
