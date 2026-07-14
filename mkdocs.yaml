@@ -120,12 +120,7 @@ nav:
     - user/setup.md
     - user/background.md
     - user/basics.md
-    # - user/examples.md
-  - Developer guidelines:
-    - Developer_guidelines/getting_started.md
-    - Developer_guidelines/requirements.md
-    - Developer_guidelines/templates.md
-  - Development conventions:
+  - Development guidelines:
     - developer/index.md
     - developer/setup.md
     - developer/convention.md

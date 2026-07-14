@@ -14,14 +14,14 @@ We only focus on aspects that regular users will interact with when using a modu
 
 ??? tip "Looking for more in-depth information on modules?"
 
-    Please consult our [development conventions][development-conventions].
+    Please consult our [development guidelines][development-guidelines].
 
 ## General structure
 
 At their core, Modelblocks modules consist of a sequence of rules that download, filter and transform data.
 
 The behaviour of each rule is determined by the module’s internal code, and a user-specified configuration file which alters code behaviour.
-Each module also defines how to interface with it through a standardised interface. The location of configuration and interface files is standard across all Modelblocks modules, and is defined by our [Convention][development-conventions].
+Each module also defines how to interface with it through a standardised interface. The location of configuration and interface files is standard across all Modelblocks modules, and is defined by our [Convention][convention].
 
 ![simple module](./images/simple_module.drawio.png)
 
@@ -60,7 +60,7 @@ module_name/
 
 1. Always located at the top level of the module's repository.
 
-The interface file will always specify the version of our [Convention][development-conventions] that the module complies with, multiple sets of `pathvars` that can re-wire the location of the files consumed / produced by the module, and a set of `wildcards` which can be used to process multiple files using the same module.
+The interface file will always specify the version of our [Convention][convention] that the module complies with, multiple sets of `pathvars` that can re-wire the location of the files consumed / produced by the module, and a set of `wildcards` which can be used to process multiple files using the same module.
 
 In general, the interface file will define three different sets of `pathvars`:
 
