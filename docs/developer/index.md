@@ -1,4 +1,4 @@
-# Developing Modelblocks
+# Development Conventions
 
 This section explains the necessary steps to import, reconfigure and execute a Modelblocks module in a `Snakemake` workflow.
 If you are new to `Snakemake` workflows, we recommend familiarising yourself with the [`Snakemake` documentation](https://snakemake.readthedocs.io/en/stable/) first.

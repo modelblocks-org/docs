@@ -5,10 +5,12 @@ This section details which these tools are, why they are needed, and how to inst
 
 ## Software environments: `pixi` or `miniconda`
 
+The first step is ensuring you have an appropriate tool to manage your software environments.
+We highly recommend `pixi` because it is a fast and modern tool.
+Alternatively, you can use `miniconda`.
 
-Modelblocks modules rely on [`Snakemake`](https://snakemake.readthedocs.io/en/stable/index.html) for environment management and software execution.
-`Snakemake` can be installed using either `pixi` or `miniconda`.
-In general, we highly recommend `pixi`, as it is a faster and more modern tool.
+Modelblocks modules rely on [`Snakemake`](https://snakemake.readthedocs.io/en/stable/index.html) during execution.
+Below are example of how to install it using either `pixi` or `miniconda`.
 
 ???+ info "Setting up a project with `pixi`"
 
@@ -40,12 +42,16 @@ In general, we highly recommend `pixi`, as it is a faster and more modern tool.
     conda activate my_project
     ```
 
-## Project templating: Modelblocks or `Snakemake` standards
+## Project templating: Modelblocks or `Snakemake`
 
-To setup your `Snakemake` project structure, we recommend using [our own project template](https://github.com/modelblocks-org/data-module-template) (using `pixi`) or the [official `Snakemake` template](https://github.com/snakemake-workflows/snakemake-workflow-template) (using `conda`).
+To save time, you can setup your `Snakemake` project following a template.
+These offer standardised structures, which helps in maintainability.
+
+If you are using `pixi`, we recommend using [our own project template](https://github.com/modelblocks-org/data-module-template).
+If you are using `miniconda`, you can instead use the [official `Snakemake` template](https://github.com/snakemake-workflows/snakemake-workflow-template).
 Instructions for either template are available in their respective repositories.
 
-??? info "What is the difference?"
+??? info "What are the differences between these templates?"
 
     Both templates have a very similar structure, and will result in a well organised project.
     However, the Modelblocks version offers some additional advantages:

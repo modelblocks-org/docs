@@ -119,6 +119,9 @@ nav:
   - Using Modelblocks:
     - user/index.md
     - user/setup.md
+    - user/background.md
+    - user/basics.md
+    # - user/examples.md
   - Getting started:
     - getting_started/installation.md
   - Background:

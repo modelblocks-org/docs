@@ -5,11 +5,11 @@ If you are new to `Snakemake` workflows, we recommend familiarising yourself wit
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-cubes:{ .lg .middle } __[Setting up](setup.md){ .card-link }__
+-   :fontawesome-solid-rocket:{ .lg .middle } __[Setting up](setup.md){ .card-link }__
 
     How to install all the necessary tools to be ready to use Modelblocks.
 
--   :fontawesome-solid-cubes:{ .lg .middle } __[Background info](./background.md){ .card-link }__
+-   :fontawesome-solid-book-open:{ .lg .middle } __[Background info](./background.md){ .card-link }__
 
     A general overview behind Modelblock's ideology and the problems it is tyring to solve.
 
@@ -17,8 +17,8 @@ If you are new to `Snakemake` workflows, we recommend familiarising yourself wit
 
     General concepts behind Modelblocks and how to use modular workflows.
 
--   :fontawesome-solid-cubes:{ .lg .middle } __[Examples and tutorials](./examples.md){ .card-link }__
+<!-- -   :fontawesome-solid-worm:{ .lg .middle } __[Examples and tutorials](./examples.md){ .card-link }__
 
-    In depth examples.
+    In depth examples. -->
 
 </div>
