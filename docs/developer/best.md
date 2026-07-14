@@ -1,6 +1,6 @@
 # Best practices
 
-The following is a list of general advice on how to help your module interact seamlessly with others.
+The following is a list of general advice on how to help your module interact seamlessly with other workflows.
 
 ## Configuration files
 
@@ -111,5 +111,5 @@ The following metadata values are often useful:
 1. For spatial data:
     1. Use `longitude` | `latitude` to express position and avoid ambiguous values like `x` | `y`.
     1. Make sure to save the CRS with the spatial data.
-    This is guaranteed with the [recommended file types][file-specific-recommendations] for GIS data.
+    This is guaranteed with the recommended file types for GIS data stated above.
 1. For currency data: currency codes must follow [ISO 4217 alpha-3](https://en.wikipedia.org/wiki/ISO_4217) codes in combination with the year of the currency (e.g., CHF2024, EUR2015, USD2020) to allow for inflation adjustments.

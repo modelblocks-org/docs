@@ -9,7 +9,7 @@ This documentation is meant to guide users and developers on how to follow our C
 
 ??? info "Looking for details on available modules?"
 
-    Please consult the official [Modelblocks website](https://www.modelblocks.org/) for a full list of **core** and **community** developed modules.
+    Please consult the official [Modelblocks website](https://www.modelblocks.org/) for a full list of **Core**{ .badge-core } and **Community**{ .badge-community } developed modules.
 
 
 <div class="grid cards" markdown>

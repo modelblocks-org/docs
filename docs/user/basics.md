@@ -29,7 +29,7 @@ Each module also defines how to interface with it through a standardised interfa
 ### Configuration
 
 Configuration values allow users to tweak module behaviour.
-Modules will generally provide example configurations with recommended defaults under `config/`.
+Modules will generally provide example configurations and recommended defaults in the `config/` directory.
 
 You should expect modules to validate the provided configuration against a schema (`config.schema.yaml`) during execution, with incorrect configurations raising errors.
 The schema file itself is also a useful resource to understand a module's capabilities.
@@ -99,7 +99,7 @@ These are pre-defined by `Snakemake`
       shapes: geo-political regions to process
     ```
 
-    1. Convention version, based on this documentation.
+    1. [Convention][convention] version, based on this documentation.
     2. Default snakemake `pathvars`.
     Used to re-wire the location of _all_ files in these directories.
     3. Notice that these reuse the `<resources>` pathvar!
