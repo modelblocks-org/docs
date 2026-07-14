@@ -29,7 +29,7 @@ Below are example of how to install it using either `pixi` or `miniconda`.
 
 ??? info "Setting up a project with `conda`"
 
-    Follow the installation instructions on the [`conda` documenation](https://docs.conda.io/en/latest/).
+    Follow the installation instructions on the [`conda` documentation](https://docs.conda.io/en/latest/).
     We recommend `miniconda` for a lightweight, minimal installation.
 
     Once installed:

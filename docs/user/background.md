@@ -31,7 +31,7 @@ We focus on the following core ideals:
 Model nuances can be added later by users if needed.
 - **Replicable, reusable, and reconfigurable**: modules should be easy to reuse and reapply on different contexts, with different assumptions, and on different computer systems.
 - **Easily adoptable**: modules should use well established tools in the field of energy systems and be easy to integrate into pre-existing projects.
-- **Improvable and manageable**: modules should allow researchers to collaborate on targetted improvements with minimal complications.
+- **Improvable and manageable**: modules should allow researchers to collaborate on targeted improvements with minimal complications.
 
 Ultimately, Modelblocks aids in turning monolithic workflows into modular ones that are easier to improve and share.
 

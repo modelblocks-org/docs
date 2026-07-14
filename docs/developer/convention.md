@@ -112,11 +112,11 @@ This file should detail the module's input/output file structure from a user's p
 
 Projects must comply with the following testing requirements at minimum.
 These tests should execute successfully before changes are integrated into the repository.
-The template should provide pre-configured pull request test setups in `.github/workfows/pr-ci.yml`.
+The template should provide pre-configured pull request test setups in `.github/workflows/pr-ci.yml`.
 
 #### Module testing
 
-Projects must ensure that the provided `integration_test.py` file excecutes successfully in **all major platforms** (Linux, MacOS, Windows).
+Projects must ensure that the provided `integration_test.py` file executes successfully on **all major platforms** (Linux, MacOS, Windows).
 
 This test should evaluate the following:
 
@@ -132,7 +132,7 @@ These tests are defined in `.pre-commit-config.yaml`, and make use of [pre-commi
 
 Among other things, these tests evaluate the following:
 
-- Machine redability issues such as removing trailing whitespaces and adding end-of-file newlines.
+- Machine readability issues such as removing trailing whitespaces and adding end-of-file newlines.
 - Repository quality issues such as large files, the use of GitHub submodules, illegal Windows filenames, and malformed configuration files (e.g., .json or .yaml).
 - Code quality for python files (using [`ruff`](https://docs.astral.sh/ruff/)) and `Snakemake` files (using [`snakefmt`](https://github.com/snakemake/snakefmt)).
 - Spelling mistakes (using [`codespell`](https://github.com/codespell-project/codespell)).
