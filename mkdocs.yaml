@@ -72,11 +72,6 @@ markdown_extensions:
       dedent_subsections: true
   - pymdownx.superfences:
       preserve_tabs: true
-      # FIXME: remove mermaid?
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -111,8 +106,6 @@ plugins:
           paths: [src]
           inventories:
             - https://docs.python.org/3/objects.inv
-            - https://pandas.pydata.org/docs/objects.inv
-            - https://docs.xarray.dev/en/stable/objects.inv
   - search
 nav:
   - Home: index.md
@@ -122,15 +115,14 @@ nav:
     - user/background.md
     - user/basics.md
     # - user/examples.md
-  - Getting started:
-    - getting_started/installation.md
-  - Background:
-    - Background/motivation.md
-    - Background/our_framework.md
-  - Modules: Modules/modules.md
   - Developer guidelines:
     - Developer_guidelines/getting_started.md
     - Developer_guidelines/requirements.md
     - Developer_guidelines/templates.md
+  - Development conventions:
+    - developer/index.md
+    - developer/setup.md
+    - developer/convention.md
+    - developer/best.md
 
 copyright: Copyright &copy; since 2025 <a href="https://github.com/modelblocks-org/docs/blob/main/AUTHORS">Modelblocks contributors</a> (Apache 2.0 licensed)

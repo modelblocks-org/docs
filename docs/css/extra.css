@@ -76,3 +76,25 @@
     object-fit: contain;
     background: white;
 }
+
+/* --- tier pills --- */
+.badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5; /* match .kv pill height */
+    padding: 0.12rem 0.55rem;
+    border-radius: 999px;
+}
+.badge-core,
+.badge-community {
+    text-transform: capitalize;
+} /* Core / Community, not core / CORE */
+.badge-core {
+    background: #ede7fb;
+    color: #5a32b0;
+}
+.badge-community {
+    background: #fff3e0;
+    color: #8a5a00;
+}
