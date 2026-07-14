@@ -4,8 +4,8 @@ This section explains the necessary steps to import, reconfigure and execute a M
 
 There are two types of Modelblocks modules:
 
-- <span class="badge badge-core">Core</span> modules are maintained by the Modelblocks organisation.
-- <span class="badge badge-community">Community</span> modules may be hosted anywhere, and should comply with our [Convention][development-conventions].
+- **Core**{ .badge-core } modules are maintained by the Modelblocks organisation.
+- **Community**{ .badge-community } modules may be hosted anywhere, and should comply with our [Convention][development-conventions].
 
 This documentation should apply to either case.
 An up to date list of modules is kept in the [Modelblocks website](https://www.modelblocks.org).

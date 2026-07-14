@@ -17,7 +17,7 @@ If you are new to `Snakemake` workflows, we recommend familiarising yourself wit
 
     How to install all the necessary tools to develop your own Modelblocks module.
 
--   :fontawesome-solid-handshake:{ .lg .middle } __[Convention requirements](./convention.md){ .card-link }__
+-   :fontawesome-solid-handshake:{ .lg .middle } __[Convention](./convention.md){ .card-link }__
 
     An in depth dive into the Modelblocks convention.
 
