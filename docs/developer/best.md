@@ -97,16 +97,45 @@ Follow [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) specifications and ens
 
 ### Time period standard
 
-We recommend following similar approaches to the [ERA5 reanalysis dataset](https://confluence.ecmwf.int/spaces/CKB/pages/85402030/ERA5+terminology+analysis+and+forecast+time+and+steps+instantaneous+and+accumulated+and+mean+rates+and+min+max+parameters) and the [`atlite` library](https://atlite.readthedocs.io/en/latest/conventions.html#time-points). Timeseries should generally represent metrics during a particular _time period_, starting at the previous time point.
+As a general convention, we interpret timestamp periods in a **start-of-period** fashion.
+E.g. 00:00 should be the first timestep of the day (covering from 0:00 until 00:59), and 23:00 the last (from 23:00 to 23:59).
 
-??? example "Example: time period length"
+Timeseries generally represent parameters that are either _instantaneous_ or _computed_.
+Our start-of-period convention applies to both cases.
 
-    Assume each sample represents the mean of some parameter.
+- **Instantaneous parameters**: these represent the value _at exactly_ the specified timestamp.
 
-    The time period ends at the specified timestamp.
-    For example: 09:00 would represent the mean _from_ 08:00 _to_ 09:00, 10:00 would be the mean _from_ 09:00 _to_ 10:00, etc.
+    ??? example "Example: instantaneous samples"
 
-    ![mean](./images/mean_timepoint.drawio.png)
+        Imagine we are sampling temperature using a sensor in a periodic fashion at 1-hour intervals.
+
+        Assuming instantaneous sampling, the 09:00 would represent the parameter _at exactly_ 09:00.
+
+        ![instant](./images/instant_timepoint.drawio.png)
+
+- **Computed parameters**: represent the result of an operation over a collection of instantaneous samples.
+This could be a cumulative sum, mean, maximum, minimum, etc.
+
+    ??? example "Example: computed maximum"
+
+        Assume our parameter is the computed maximum over a period of 1-hour.
+
+        Under a start-of-period convention, the 08:00 value would represent the maximum _from_ 08:00 _to_ 09:00.
+
+        ![mean](./images/max_timepoint.drawio.png)
+
+
+??? warning "Adjusting end-of-period timeseries"
+
+    Some datasets and tools, such as [ERA5 reanalysis dataset](https://confluence.ecmwf.int/spaces/CKB/pages/85402030/ERA5+terminology+analysis+and+forecast+time+and+steps+instantaneous+and+accumulated+and+mean+rates+and+min+max+parameters) and the [`atlite` library](https://atlite.readthedocs.io/en/latest/conventions.html#time-points) provide data in an end-of-period fashion.
+
+    Adjusting to start-of-period is trivial with [`pandas`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shift.html).
+
+    ```python
+    start_of_period = end_of_period.shift(freq="-1h")  # (1)!
+    ```
+
+    1. Assumes the data already has a `DatetimeIndex`.
 
 
 ## Configuration recommendations
