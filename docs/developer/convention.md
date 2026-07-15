@@ -53,6 +53,8 @@ All the input / output files of the module should have the ability to be easily 
 
 Projects should validate input configurations using a standardised schema located in `workflow/internal/config.schema.yaml`, and provide a configuration example with recommended defaults in `config/config.yaml`.
 
+Following `Snakemake` specifications, the configuration schema should follow the latest [JSON-schema specification](https://json-schema.org/)
+
 #### User files
 
 When possible, modules should validate input files using data tools like [`pandera`](https://pandera.readthedocs.io/en/stable/) or equivalents.
@@ -63,7 +65,7 @@ All modules show comply with the following requirements at a repository level.
 
 ### Licensing
 
-Projects must use either Apache-2.0 or MIT open-source licenses, which are [OSI approved](https://opensource.org/licenses).
+Projects should use either Apache-2.0 or MIT open-source licenses, which are [OSI approved](https://opensource.org/licenses).
 
 Projects should maintain an `AUTHORS` file detailing licensing attribution of the software.
 

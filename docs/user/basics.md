@@ -109,7 +109,7 @@ These are pre-defined by `Snakemake`
 
 ## Importing
 
-Modules can be directly imported by other workflows with minimal effort using `module` command.
+Modules can be directly imported by other workflows with minimal effort using the `module` command.
 
 At minimum, users must specify the module's GitHub repository and version tag under `snakefile`, and provide the necessary module configuration under `config`.
 
@@ -127,7 +127,7 @@ use rule * from module_example as module_example_*  # (3)!
 ```
 
 1. The tag should be an official module release.
-This ensures the module not impacted by future updates, which may alter its behaviour or resource/configuration requirements.
+This ensures the module is not impacted by future updates, which may alter its behaviour or resource/configuration requirements.
 2. We recommend storing module configuration under module-specific keys, or in separate files.
 3. Adding a prefix to the module's rules avoids naming conflicts.
 

@@ -18,7 +18,7 @@ This documentation is meant to guide users and developers on how to follow our C
 
     Learn how to use existing Modelblocks modules in your research.
 
--   :fontawesome-solid-screwdriver-wrench:{ .lg .middle } __[Development Conventions](./developer/index.md){ .card-link }__
+-   :fontawesome-solid-screwdriver-wrench:{ .lg .middle } __[Development guidelines](./developer/index.md){ .card-link }__
 
     Learn about the Modelblocks Convention to create new Modelblocks modules and share your research with others.
 

@@ -1,4 +1,4 @@
-# Development Guidelines
+# Development guidelines
 
 This section explains the rules to follow when developing a Modelblocks module in order to comply with our Convention.
 If you are new to `Snakemake` workflows, we recommend familiarising yourself with the [`Snakemake` documentation](https://snakemake.readthedocs.io/en/stable/) first.
