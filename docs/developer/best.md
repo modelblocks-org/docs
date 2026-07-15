@@ -109,16 +109,16 @@ Our start-of-period convention applies to both cases.
 
         Imagine we are sampling temperature using a sensor in a periodic fashion at 1-hour intervals.
 
-        Assuming instantaneous sampling, the 09:00 would represent the parameter _at exactly_ 09:00.
+        Assuming instantaneous sampling, the 09:00 timestamp would represent the parameter _at exactly 09:00_.
 
         ![instant](./images/instant_timepoint.drawio.png)
 
-- **Computed parameters**: represent the result of an operation over a collection of instantaneous samples.
+- **Computed parameters**: these represent the result of an operation over a collection of instantaneous samples.
 This could be a cumulative sum, mean, maximum, minimum, etc.
 
     ??? example "Example: computed maximum"
 
-        Assume our parameter is the computed maximum over a period of 1-hour.
+        Assume our parameter is the computed maximum temperature over a period of 1-hour.
 
         Under a start-of-period convention, the 08:00 value would represent the maximum _from_ 08:00 _to_ 09:00.
 
