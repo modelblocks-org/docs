@@ -7,7 +7,7 @@ There are two types of Modelblocks modules:
 - **Core**{ .badge-core } modules are maintained by the Modelblocks organisation.
 - **Community**{ .badge-community } modules comply with our [Convention][convention], but may be hosted anywhere.
 
-This documentation applies to either case.
+This documentation applies to both.
 An up-to-date list of modules is kept on the [Modelblocks website](https://www.modelblocks.org).
 
 
