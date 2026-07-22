@@ -1,75 +1,66 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_name: modelblocks
+site_name: Modelblocks documentation
 site_url: https://modelblocks.readthedocs.io/
 repo_name: docs
 repo_url: https://github.com/modelblocks-org/docs/
 edit_uri: edit/main/docs/
+extra_css:
+  - css/extra.css
 theme:
+  font:
+    text: Lato
+    code: Fira Code
   name: material
   features:
-  - navigation.footer
-  - navigation.instant
+  - navigation.indexes
+  - navigation.top
   - navigation.tabs
   - navigation.tabs.sticky
-  - navigation.indexes
+  - content.code.copy
+  - content.code.annotate
+  - content.tooltips
   - search.suggest
   - search.highlight
+  - search.share
   - toc.follow
-  palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-      primary: teal
-      accent: blue grey
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-      primary: teal
-      accent: blue grey
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to system preference
-      primary: teal
-      accent: blue grey
 markdown_extensions:
   - admonition
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.details
   - pymdownx.betterem:
       smart_enable: all
-  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.snippets:
-      check_paths: true
-      restrict_base_path: true
+      dedent_subsections: true
   - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid_custom
+      preserve_tabs: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      clickable_checkbox: true
   - toc:
-      anchorlink: true
+      anchorlink: false
+      permalink: "¶"
+      toc_depth: 4
 plugins:
+  - autorefs
   - git-committers:
       enabled: true
       repository: modelblocks-org/docs
       branch: main
-  - search
   - mkdocstrings:
       default_handler: python
       handlers:
@@ -78,30 +69,37 @@ plugins:
             show_bases: true
             filters:
               - "!^_"
-            heading_level: 2
+            heading_level: 1
             show_root_heading: true
             merge_init_into_class: true
             show_if_no_docstring: true
             signature_crossrefs: true
-            show_root_toc_entry: true
+            show_root_toc_entry: false
             show_signature_annotations: true
             inherited_members: false
             show_labels: false
           paths: [src]
           inventories:
             - https://docs.python.org/3/objects.inv
-            - https://pandas.pydata.org/docs/objects.inv
-            - https://docs.xarray.dev/en/stable/objects.inv
-
+  - enumerate-headings:
+        include:
+          - developer/convention.md
+        start_level: 2
+        increment_across_pages: false
+        toc_depth: 4
+  - search
 nav:
   - Home: index.md
   - Background:
-    - Background/motivation.md
-    - Background/our_framework.md
-  - Modules: Modules/modules.md
-  - Developer guidelines:
-    - Developer_guidelines/getting_started.md
-    - Developer_guidelines/requirements.md
-    - Developer_guidelines/templates.md
+    - background/index.md
+  - Using Modelblocks:
+    - user/index.md
+    - user/setup.md
+    - user/basics.md
+  - Development guidelines:
+    - developer/index.md
+    - developer/setup.md
+    - developer/convention.md
+    - developer/best.md
 
-copyright: Copyright &copy; since 2025 <a href="https://github.com/modelblocks-org/docs/blob/main/AUTHORS">modelblocks contributors</a> (Apache 2.0 licensed)
+copyright: Copyright &copy; since 2025 <a href="https://github.com/modelblocks-org/docs/blob/main/AUTHORS">Modelblocks contributors</a> (Apache 2.0 licensed)

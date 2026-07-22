@@ -1,0 +1,100 @@
+.rst-badge {
+    font-size: 0.7rem;
+}
+
+/* reduce font size of rendered math */
+.katex-html {
+    font-size: 0.8rem;
+}
+
+/* Set this to match the logo */
+:root {
+    --md-primary-fg-color:        #0e9c81ff;
+    --md-primary-fg-color--light: #23b89cff;
+    --md-primary-fg-color--dark:  #026353ff;
+}
+
+.md-typeset, .md-nav, .md-tabs__link, .md-typeset .admonition, .md-typeset details, .md-typeset table:not([class]) {
+    font-size: 0.8rem;
+}
+
+.md-typeset h1, .md-typeset h2 {
+    font-weight: normal;
+    color: var(--md-typeset-color);
+}
+
+.doc-function h3 {
+    /* font-size: 1.0rem; */
+    margin-top: 3.0rem;
+}
+
+.bubble {
+    border-radius: 2px;
+    padding: 1px 4px 1px 4px;
+}
+
+
+/* Allow tables to be horizontally scrollable. */
+.md-typeset__scrollwrap {
+  overflow-x: auto;
+}
+
+
+.md-typeset li.xr-var-item, .md-typeset ul.xr-var-list {
+    display: contents;
+}
+
+.md-typeset .xr-section-details {
+    display: none;
+}
+
+.md-typeset ul.xr-dim-list li {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.md-typeset ul.xr-dim-list {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* Make card links cover the entire grid card. */
+.md-typeset .grid.cards > ul > li {
+    position: relative;
+}
+
+.md-typeset .grid.cards a.card-link::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+}
+
+.md-typeset img.workflow-comparison-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1236 / 635;
+    object-fit: contain;
+    background: white;
+}
+
+/* Module type badges. */
+.badge-core,
+.badge-community {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0.12rem 0.55rem;
+    border-radius: 999px;
+    text-transform: capitalize;
+}
+
+.badge-core {
+    background: #ede7fb;
+    color: #5a32b0;
+}
+
+.badge-community {
+    background: #fff3e0;
+    color: #8a5a00;
+}

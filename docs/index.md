@@ -1,16 +1,25 @@
 # Home
 
-Welcome to the [`modelblocks`](https://www.modelblocks.org/) documentation!
 
-Our main purpose is enabling energy researchers and institutions to share, reuse and improve the data workflows used to construct Energy System Models in a decentralised way.
-We aim to do this by providing an expanding collection of high-quality modular workflows used for peer-reviewed research, inspired by `snakemake`'s [workflow catalog](https://snakemake.github.io/snakemake-workflow-catalog/).
+Welcome to the **Modelblocks** documentation!
 
-We wish to turn very complex models that are hard to maintain and reuse into a range of digestible, well supported tools that get better and better over time!
+**Modelblocks** is a collection of reusable, composable data modules for energy system modelling.
+Each module is a self-contained `Snakemake` workflow that turns raw data into harmonised, model-ready datasets, and can be dropped into any larger workflow.
+This documentation is meant to guide users and developers on how to follow our Convention.
 
-![modules](./images/modular.png)
+??? info "Looking for details on available modules?"
 
-Learn about the full list of available [modules](./Modules/modules.md).
+    Please consult the official [Modelblocks website](https://www.modelblocks.org/) for a full list of **Core**{ .badge-core } and **Community**{ .badge-community } developed modules.
 
-## For developers
 
-If you want to start creating your own data modules, check out our [developer guidelines](./Developer_guidelines/getting_started.md).
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-rocket:{ .lg .middle } __[Using Modelblocks](./user/index.md){ .card-link }__
+
+    Learn how to use existing Modelblocks modules in your research.
+
+-   :fontawesome-solid-screwdriver-wrench:{ .lg .middle } __[Development guidelines](./developer/index.md){ .card-link }__
+
+    Learn about the Modelblocks Convention to create new Modelblocks modules and share your research with others.
+
+</div>
