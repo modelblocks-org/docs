@@ -42,7 +42,24 @@ Below are example of how to install it using either `pixi` or `miniconda`.
     conda activate my_project
     ```
 
-## Project templating: Modelblocks or `Snakemake`
+## Project setup: Minimal or with a template
+
+To run an existing module, you can start a project with three ingredients:
+
+- a Snakefile
+- a config file to configure the module
+- a directory structure that has `resources` and `results`.
+
+```bash
+.worflow_name/
+├── config/
+│   └── module_config.yaml
+├── resources/
+│   ├── automatic/
+│   └── user/
+├── results/
+└── Snakefile
+```
 
 To save time, you can setup your `Snakemake` project following a template.
 These offer standardised structures, which helps in maintainability.
