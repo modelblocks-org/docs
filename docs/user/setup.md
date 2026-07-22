@@ -9,8 +9,8 @@ The first step is ensuring you have an appropriate tool to manage your software 
 We highly recommend `pixi` because it is a fast and modern tool.
 Alternatively, you can use `miniconda`.
 
-Modelblocks modules rely on [`Snakemake`](https://snakemake.readthedocs.io/en/stable/index.html) during execution.
-Below are example of how to install it using either `pixi` or `miniconda`.
+Modelblocks modules rely on [`Snakemake`](https://snakemake.readthedocs.io/en/stable/index.html) and `conda` during execution.
+Below are examples of how to install both tools using either `pixi` or `miniconda`.
 
 ???+ info "Setting up a project with `pixi`"
 
@@ -42,37 +42,21 @@ Below are example of how to install it using either `pixi` or `miniconda`.
     conda activate my_project
     ```
 
-## Project setup: Minimal or with a template
+## Using modelblocks: `Snakemake`
 
-To run an existing module, you can start a project with three ingredients:
+You can import Modelblocks modules into your own `Snakemake` workflow using the [`module`](https://snakemake.readthedocs.io/en/stable/snakefiles/modularization.html#modules) command.
+No other manual tool installation is required.
 
-- a Snakefile
-- a config file to configure the module
-- a directory structure that has `resources` and `results`.
+??? info "Creating a new `Snakemake` project?"
 
-```bash
-.worflow_name/
-├── config/
-│   └── module_config.yaml
-├── resources/
-│   ├── automatic/
-│   └── user/
-├── results/
-└── Snakefile
-```
+    To save time, you can setup your `Snakemake` project following a template.
+    These offer standardised structures, which helps in maintainability.
 
-To save time, you can setup your `Snakemake` project following a template.
-These offer standardised structures, which helps in maintainability.
+    If you are using `pixi`, we recommend using [our own project template](https://github.com/modelblocks-org/data-module-template).
+    If you are using `miniconda`, you can instead use the [official `Snakemake` template](https://github.com/snakemake-workflows/snakemake-workflow-template).
+    Instructions for either template are available in their respective repositories.
 
-If you are using `pixi`, we recommend using [our own project template](https://github.com/modelblocks-org/data-module-template).
-If you are using `miniconda`, you can instead use the [official `Snakemake` template](https://github.com/snakemake-workflows/snakemake-workflow-template).
-Instructions for either template are available in their respective repositories.
+To start processing data with the module, you will need to interface with by configuring it, then providing input files (if needed), and requesting results.
+We explain how to do this in [basic concepts][basic-concepts].
 
-??? info "What are the differences between these templates?"
 
-    Both templates have a very similar structure, and will result in a well organised project.
-    However, the Modelblocks version offers some additional advantages:
-
-    - More modern setup.
-    - Automated templated generation and updates via [`copier`](https://copier.readthedocs.io/en/stable/).
-    - Tuned for modularisation, making it easier to convert your project to a Modelblocks module in the future.

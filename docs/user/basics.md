@@ -80,7 +80,7 @@ These are pre-defined by `Snakemake`
       snakemake_defaults: # (2)!
         logs:
           default: "<logs>"
-          description: location of rule log files.
+          description: "location of rule log files."
         resources:
           default: "<resources>"
           description: "location of module resource files."
@@ -90,17 +90,17 @@ These are pre-defined by `Snakemake`
       user_resources: # (3)!
         shapes:
           default: "<resources>/user/{shapes}/shapes.parquet"
-          description: region-specific polygons to process.
+          description: "region-specific polygons to process."
       results: # (4)!
         proxy:
           default: "<results>/{shapes}/proxy.parquet"
-          description: proxied statistics using the provided shapes.
+          description: "proxied statistics using the provided shapes."
     wildcards: # (5)!
       shapes: geo-political regions to process
     ```
 
     1. [Convention][convention] version, based on this documentation.
-    2. Default snakemake `pathvars`.
+    2. Default `pathvars` defined by `Snakemake`.
     Used to re-wire the location of _all_ files in these directories.
     3. Notice that these reuse the `<resources>` pathvar!
     4. Notice that these reuse the `<results>` pathvar!
