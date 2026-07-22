@@ -58,5 +58,3 @@ No other manual tool installation is required.
 
 To start processing data with the module, you will need to interface with by configuring it, then providing input files (if needed), and requesting results.
 We explain how to do this in [basic concepts][basic-concepts].
-
-
