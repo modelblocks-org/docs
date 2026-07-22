@@ -17,10 +17,6 @@ An up to date list of modules is kept in the [Modelblocks website](https://www.m
 
     How to install all the necessary tools to be ready to use Modelblocks.
 
--   :fontawesome-solid-book-open:{ .lg .middle } __[Background info](./background.md){ .card-link }__
-
-    A general overview behind Modelblock's ideology and the problems it is trying to solve.
-
 -   :fontawesome-solid-cubes:{ .lg .middle } __[Basic concepts](./basics.md){ .card-link }__
 
     General concepts behind Modelblocks and how to use modular workflows.

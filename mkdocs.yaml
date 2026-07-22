@@ -90,10 +90,11 @@ plugins:
   - search
 nav:
   - Home: index.md
+  - Background:
+    - background/index.md
   - Using Modelblocks:
     - user/index.md
     - user/setup.md
-    - user/background.md
     - user/basics.md
   - Development guidelines:
     - developer/index.md
