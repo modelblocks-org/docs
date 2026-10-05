@@ -28,11 +28,11 @@ The following metadata values are often useful:
         "year": "yr",
         "country_id": "no_unit",
         "shape_id": "no_unit",
-        "demand": "mwh"
-        }
+        "demand": "mwh",
+    }
     dataframe.attrs["source"] = "github.com/modelblocks-org/docs"
     dataframe.attrs["license"] = "CC-BY-4.0"
-    dataframe.to_parquet('my_data.parquet')
+    dataframe.to_parquet("my_data.parquet")
     ```
 
 ### Consistent naming
@@ -83,7 +83,7 @@ Follow [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) specifications and ens
 
     ```python
     # if the timeseries is already recorded in UTC.
-    df["timestamp"] = pd.to_datetime(df["timestamp"], utc=True) # (1)!
+    df["timestamp"] = pd.to_datetime(df["timestamp"], utc=True)  # (1)!
     # if the timeseries was recorded for a different timezone
     df["timestamp"] = (
         pd.to_datetime(df["timestamp"])
@@ -149,7 +149,7 @@ However, it might be necessary to write additional tests to catch problems that 
 You can write these tests in a separate validation function.
 
 ```python title="Snakefile"
-include: "rules/_utils.smk" # (1)
+include: "rules/_utils.smk"  # (1)
 configfile: workflow.source_path("../config/config.yaml")
 validate(config, workflow.source_path("internal/config.schema.yaml"))
 additional_validation(config)  # (2)
